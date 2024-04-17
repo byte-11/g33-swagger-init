@@ -1,0 +1,9 @@
+2024-04-15 11:47:36.145852+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMMENT" not found (this database is empty); SQL statement:
+select c1_0.id,c1_0.body,c1_0.email,c1_0.name,c1_0.user_id from comment c1_0 where c1_0.id=? [42104-224]
+2024-04-15 11:47:54.324013+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "BODY CHARACTER VARYING(255)": "U&'qui ipsa animi nostrum praesentium voluptatibus odit\\000aqui non impedit cum ... (263)"; SQL statement:
+insert into comment (body,email,name,user_id,id) values (?,?,?,?,default) [22001-224]
+2024-04-15 11:48:39.406323+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "BODY CHARACTER VARYING(255)": "U&'qui ipsa animi nostrum praesentium voluptatibus odit\\000aqui non impedit cum ... (263)"; SQL statement:
+insert into comment (body,email,name,user_id,id) values (?,?,?,?,default) [22001-224]
